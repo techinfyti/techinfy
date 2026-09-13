@@ -11,7 +11,9 @@
       "Bash(sed -i -e 's#<link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/favicon.svg\">#<link rel=\"icon\" type=\"image/png\" href=\"assets/favicon.png\">#g' -e 's#src=\"assets/logo.svg\"#src=\"assets/logo.png\"#g' -e s/Kintelyx/TechInfy/g -e s/kintelyx/techinfy/g index.html about.html services.html contact.html)",
       "Bash(sed -i 's/Kintelyx/TechInfy/g' css/style.css)",
       "Bash(node -e ' *)",
-      "Bash(awk '{printf \"%-30s %10d bytes\\\\n\", $NF, $5}')"
+      "Bash(awk '{printf \"%-30s %10d bytes\\\\n\", $NF, $5}')",
+      "Bash(git push *)",
+      "Bash(gh auth *)"
     ]
   }
 }
