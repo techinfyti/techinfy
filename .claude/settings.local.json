@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(cp style.css style.css.bak)",
+      "Bash(sed -i -e s/--violet-bright/--green-bright/g -e s/--violet-soft/--mint-soft/g -e s/--violet/--teal/g -e s/--indigo/--cyan/g -e s/--navy-dark/--blue-dark/g -e s/--navy/--blue/g style.css)",
+      "Bash(sed -i 's/countColor=%238B2FD1/countColor=%231671C9/g' index.html about.html services.html contact.html)",
+      "Bash(sed -i 's/style\\\\.css?v=23/style.css?v=24/g; s/script\\\\.js?v=23/script.js?v=24/g' index.html about.html services.html contact.html)",
+      "Bash(cp logo.png assets/logo.png)",
+      "Bash(rm -f assets/logo.svg assets/favicon.svg)",
+      "Bash(sed -i -e 's#<link rel=\"icon\" type=\"image/svg+xml\" href=\"assets/favicon.svg\">#<link rel=\"icon\" type=\"image/png\" href=\"assets/favicon.png\">#g' -e 's#src=\"assets/logo.svg\"#src=\"assets/logo.png\"#g' -e s/Kintelyx/TechInfy/g -e s/kintelyx/techinfy/g index.html about.html services.html contact.html)",
+      "Bash(sed -i 's/Kintelyx/TechInfy/g' css/style.css)",
+      "Bash(node -e ' *)",
+      "Bash(awk '{printf \"%-30s %10d bytes\\\\n\", $NF, $5}')"
+    ]
+  }
+}
