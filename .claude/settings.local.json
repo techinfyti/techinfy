@@ -13,7 +13,13 @@
       "Bash(node -e ' *)",
       "Bash(awk '{printf \"%-30s %10d bytes\\\\n\", $NF, $5}')",
       "Bash(git push *)",
-      "Bash(gh auth *)"
+      "Bash(gh auth *)",
+      "Bash(git remote *)",
+      "Bash(git fetch *)",
+      "Bash(git ls-tree *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit --allow-empty -m ' *)"
     ]
   }
 }
