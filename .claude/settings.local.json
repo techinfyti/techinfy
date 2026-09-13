@@ -19,7 +19,11 @@
       "Bash(git ls-tree *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git commit --allow-empty -m ' *)"
+      "Bash(git commit --allow-empty -m ' *)",
+      "Bash(rm -rf /c/Kwebsite-deploy)",
+      "Bash(mkdir -p /c/Kwebsite-deploy)",
+      "Bash(cp -r /c/Kwebsite/index.html /c/Kwebsite/about.html /c/Kwebsite/services.html /c/Kwebsite/contact.html /c/Kwebsite/css /c/Kwebsite/js /c/Kwebsite/assets /c/Kwebsite-deploy/)",
+      "Read(//c//**)"
     ]
   }
 }

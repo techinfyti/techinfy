@@ -61,9 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Highlight active nav link based on current page
-  const path = window.location.pathname.split('/').pop() || 'index.html';
+  // Compares extension-less basenames so this works whether the server
+  // serves literal "about.html" paths or rewrites to clean "/about" URLs.
+  const path = (window.location.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
   document.querySelectorAll('.nav-links a').forEach(a => {
-    if (a.getAttribute('href') === path) a.classList.add('active');
+    const href = a.getAttribute('href').replace(/\.html$/, '');
+    if (href === path) a.classList.add('active');
   });
 
   // AI capabilities slider
